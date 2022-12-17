@@ -6,10 +6,12 @@ import { useEffect, useState } from 'react'
 export function Feed() {
 
   const [selectedCategory, setSelectedCategory] = useState('New')
+  const [videos, setVideos] = useState([])
 
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
-  },[selectedCategory])
+  },[selectedCategory]).then((data)=>{setVideos(data.items)})
+
 
   return(
     <Stack sx={{ flexDirection: {sx: "column", md: "row"}}}>
