@@ -1,5 +1,5 @@
-export function ChannelDetail() {
+export function channelDetail() {
   return(
-    <div>ChannelDetail</div>
+    <div>channelDetail</div>
   )
 }
