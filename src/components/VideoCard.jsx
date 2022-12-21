@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import { Typography, Card, CardContent, CardMedia } from "@mui/material"
 import { CheckCircle } from "@mui/icons-material"
 import { demoThumbnailUrl,demoVideoUrl,demoChannelTitle,demoChannelUrl,demoVideoTitle } from "../utilities/constants"
-import { borderRadius } from "@mui/system"
 
 export function VideoCard({video: {id:{videoId}, snippet}}) {
   return (

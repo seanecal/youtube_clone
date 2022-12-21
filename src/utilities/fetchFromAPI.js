@@ -10,7 +10,6 @@ const options = {
   },
   headers: {
     'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
-    // 'X-RapidAPI-Key':'9eb28cb916msh7b08aefeda25b3bp18767bjsn68b11818f905',
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
   }
 };
